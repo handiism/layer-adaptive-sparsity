@@ -38,6 +38,12 @@ def get_modules(model):
             modules.append(m)
     return modules
 
+def get_raw_modules(model):
+    modules = []
+    for m in model.modules():
+        modules.append(m)
+    return modules
+
 def get_convmodules(model):
     modules = []
     for m in model.modules():
