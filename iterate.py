@@ -1,6 +1,6 @@
 import torch,argparse,random,os
 import numpy as np
-from tools import *
+from lastools import *
 
 """ ARGUMENT PARSING """
 parser = argparse.ArgumentParser()
