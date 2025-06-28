@@ -1,0 +1,13 @@
+[project]
+name = "lastools"
+version = "0.1.0"
+description = "A modular deep learning pruning and training toolkit"
+requires-python = ">=3.8"
+dependencies = ["torch>=2.7.1", "torchvision>=0.22.1", "numpy>=2.0.2"]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]
