@@ -34,6 +34,8 @@ def prune_weights_l1predefined(model,amounts):
     mlist = get_modules(model)
     for idx,m in enumerate(mlist):
         prune.l1_unstructured(m,name="weight",amount=float(amounts[idx]))
+        prune.remove(m,name="weight")
+            
 
 """
 Methods: All weights
